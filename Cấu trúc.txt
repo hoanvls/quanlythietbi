@@ -1,0 +1,29 @@
+device-management/
+│── backend/                # Thư mục Backend (Node.js + Express + MongoDB)
+│   ├── models/             # Chứa các mô hình dữ liệu MongoDB
+│   │   ├── Device.js       # Mô hình thiết bị
+│   │   ├── User.js         # Mô hình người dùng
+│   ├── routes/             # Chứa các API Endpoint
+│   │   ├── deviceRoutes.js # API quản lý thiết bị
+│   │   ├── userRoutes.js   # API quản lý người dùng & đăng nhập
+│   ├── config/             # Cấu hình ứng dụng
+│   │   ├── db.js           # Kết nối MongoDB
+│   ├── middleware/         # Middleware kiểm tra quyền truy cập
+│   │   ├── authMiddleware.js # Kiểm tra xác thực & phân quyền
+│   ├── server.js           # File chính khởi động backend
+│   ├── package.json        # Danh sách dependencies backend
+│── frontend/               # Thư mục Frontend (React + Tailwind CSS)
+│   ├── src/
+│   │   ├── components/     # Chứa các component giao diện
+│   │   │   ├── DeviceList.js # Hiển thị danh sách thiết bị
+│   │   │   ├── Login.js     # Giao diện đăng nhập
+│   │   │   ├── Navbar.js    # Thanh điều hướng
+│   │   ├── pages/          # Chứa các trang chính
+│   │   │   ├── Dashboard.js # Trang chính quản lý thiết bị
+│   │   │   ├── Home.js      # Trang chủ
+│   │   ├── App.js          # Thành phần chính của React
+│   │   ├── index.js        # Điểm vào chính của ứng dụng React
+│   ├── package.json        # Danh sách dependencies frontend
+│   ├── tailwind.config.js  # Cấu hình Tailwind CSS
+│── .gitignore              # Bỏ qua các file không cần thiết khi commit
+│── README.md               # Hướng dẫn sử dụng dự án
